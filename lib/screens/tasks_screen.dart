@@ -53,7 +53,7 @@ class TasksScreen extends StatelessWidget {
           ),
           const SizedBox(height: 38),
           const SectionHeader(title: 'My Weekly Tasks'),
-          const SizedBox(height: 31),
+          const SizedBox(height: 25),
           // Горизонтальный список карточек
           SizedBox(
             height: 230,
@@ -86,7 +86,7 @@ class TasksScreen extends StatelessWidget {
           ),
           const SizedBox(height: 42),
           const SectionHeader(title: 'Today’s Tasks'),
-          const SizedBox(height: 31),
+          const SizedBox(height: 25),
           const TaskCard(
             title: 'Design 2 App Screens',
             subtitle: 'Crypto Wallet App',
@@ -160,7 +160,7 @@ class SectionHeader extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(title, style: workSans(18, FontWeight.w600, dark)),
-              const SizedBox(height: 8),
+              const SizedBox(height: 3),
               Text(
                 '18 Tasks Pending',
                 style: workSans(12, FontWeight.w400, grey),
@@ -308,9 +308,9 @@ class WeeklyCard extends StatelessWidget {
             width: 142,
             child: Text(title, style: workSans(18, FontWeight.w600, dark)),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 12),
           AvatarStack(images: avatars, count: count, size: 37, step: 28),
-          const SizedBox(height: 26),
+          const SizedBox(height: 22),
           DateRow(date: date),
         ],
       ),

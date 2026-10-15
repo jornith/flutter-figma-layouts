@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Макеты из Figma',
+      theme: ThemeData(visualDensity: VisualDensity.standard),
       initialRoute: '/',
       routes: {
         '/': (context) => const HomeScreen(),
